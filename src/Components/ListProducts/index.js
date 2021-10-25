@@ -7,7 +7,7 @@ const Products = () => {
     const products = useSelector(store => store.products);
 
     return (
-        <div>
+        <div className="product-container">
             {
                 products.map(item => <Product key={item.id} item={item} /> )
             }

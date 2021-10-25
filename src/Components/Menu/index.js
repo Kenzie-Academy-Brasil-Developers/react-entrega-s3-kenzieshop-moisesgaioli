@@ -1,12 +1,14 @@
 import { Link } from "react-router-dom"
+import { BsCart4 } from "react-icons/bs"
+import "./styles.css"
 
 const Menu = () => {
     return (
         <header>
             <nav>
-                <ul>
-                    <li> <Link to="/"> Produtos </Link> </li>
-                    <li> <Link to="/carrinho"> Carrinho </Link> </li>
+                <ul className="menu-list">
+                    <li className="menu-item"> <Link className="menu-link" to="/"> Produtos </Link> </li>
+                    <li className="menu-item"> <Link className="menu-link" to="/carrinho"> <BsCart4 /> </Link> </li>
                 </ul>
             </nav>
         </header>
